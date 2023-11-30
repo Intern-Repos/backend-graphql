@@ -25,8 +25,13 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+<<<<<<< HEAD
     public Users signIn(String username, String password) {
             Users user = userRepository.findByUsername(username).orElse(null);
+=======
+    public Users signIn(String userName, String password) {
+            Users user = userRepository.findByUsername(userName).orElse(null);
+>>>>>>> e5dc6f0 (hobby function added successfully)
             if (user != null && passwordEncoder.matches(password, user.getPassword())) {
                 return user;
             }

@@ -14,7 +14,10 @@ public class HobbyServiceImpl implements HobbyService {
     private HobbyRepository hobbyRepository;
     @Override
     public Hobby addHobby(Hobby hobby) {
+<<<<<<< HEAD
         System.out.println("test"+hobby.getUser());
+=======
+>>>>>>> e5dc6f0 (hobby function added successfully)
         return hobbyRepository.save(hobby);
     }
 
@@ -27,11 +30,14 @@ public class HobbyServiceImpl implements HobbyService {
     }
 
     @Override
+<<<<<<< HEAD
     public Hobby findHobbyById(Integer id) {
         return hobbyRepository.findById(id).orElse(null);
     }
 
     @Override
+=======
+>>>>>>> e5dc6f0 (hobby function added successfully)
     public List<Hobby> getHobbiesByUserId(Integer id) {
         return hobbyRepository.findByUserId(id);
     }

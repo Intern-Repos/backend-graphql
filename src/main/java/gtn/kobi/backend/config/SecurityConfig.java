@@ -32,7 +32,11 @@ public class SecurityConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/graphql") // Configure the specific path of your GraphQL endpoint
+<<<<<<< HEAD
                         .allowedOrigins("http://localhost:5173") // Add the origin that is allowed to access your GraphQL server
+=======
+                        .allowedOrigins("http://localhost:5173", "https://supermarket-pos-webapp.vercel.app") // Add the origin that is allowed to access your GraphQL server
+>>>>>>> e5dc6f0 (hobby function added successfully)
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Allow specific HTTP methods
                         .allowedHeaders("*"); // Allow specific headers
 

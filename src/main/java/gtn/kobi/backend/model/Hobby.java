@@ -12,7 +12,11 @@ public class Hobby {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String hobbyName;
+<<<<<<< HEAD
     @ManyToOne(cascade = CascadeType.ALL)
+=======
+    @ManyToOne
+>>>>>>> e5dc6f0 (hobby function added successfully)
     @JoinColumn(name="user_id", nullable = false)
     private Users user;
 
