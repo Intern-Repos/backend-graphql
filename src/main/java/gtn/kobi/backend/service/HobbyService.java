@@ -7,6 +7,6 @@ import java.util.List;
 public interface HobbyService {
     Hobby addHobby (Hobby hobby);
     void deleteHobby(Integer id );
-
+    Hobby findHobbyById(Integer id);
     List<Hobby> getHobbiesByUserId(Integer id);
 }

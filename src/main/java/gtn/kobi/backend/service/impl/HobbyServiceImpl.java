@@ -14,6 +14,7 @@ public class HobbyServiceImpl implements HobbyService {
     private HobbyRepository hobbyRepository;
     @Override
     public Hobby addHobby(Hobby hobby) {
+        System.out.println("test"+hobby.getUser());
         return hobbyRepository.save(hobby);
     }
 
@@ -23,6 +24,11 @@ public class HobbyServiceImpl implements HobbyService {
         if (hobby != null) {
             hobbyRepository.delete(hobby);
         }
+    }
+
+    @Override
+    public Hobby findHobbyById(Integer id) {
+        return hobbyRepository.findById(id).orElse(null);
     }
 
     @Override

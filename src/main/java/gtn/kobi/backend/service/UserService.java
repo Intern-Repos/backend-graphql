@@ -7,4 +7,6 @@ public interface UserService {
     Users signIn(String userName, String password);
 
     Users findByUsername(String usrename);
+
+    Users findByUserId(int userId);
 }
